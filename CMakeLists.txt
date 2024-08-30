@@ -10,7 +10,8 @@ add_executable(fluffy_spoon
         src/main.cpp
         src/Block.cpp
         include/Block.h
-        include/HashUtil.h)
+        include/HashUtil.h
+        src/HashUtil.cpp)
 
 find_package(OpenSSL REQUIRED)
 include_directories(${OPENSSL_INCLUDE_DIR})
