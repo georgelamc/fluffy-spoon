@@ -9,14 +9,14 @@ class Block {
     private:
         std::string hash;
         std::string prevHash;
-        std::string data {};
-        long long timestamp {};
+        std::string data{};
+        long long timestamp{};
 
     public:
         Block(const std::string &data, const std::string &prevHash) : data(data), prevHash(prevHash) {
-          const auto now = std::chrono::system_clock::now();
-          const auto sinceEpoch = now.time_since_epoch();
-          timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(sinceEpoch).count();
+            const auto now = std::chrono::system_clock::now();
+            const auto sinceEpoch = now.time_since_epoch();
+            timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(sinceEpoch).count();
         }
 
         std::string getHash() {

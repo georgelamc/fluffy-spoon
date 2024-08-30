@@ -1,0 +1,6 @@
+BasedOnStyle: llvm
+ColumnLimit: 0
+IndentAccessModifiers: true
+IndentWidth: 4
+InsertNewlineAtEOF: true
+UseTab: Always

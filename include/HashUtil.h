@@ -11,8 +11,8 @@ class HashUtil {
 
     public:
         std::string hash(std::string &input) {
-			unsigned char hash[SHA256_DIGEST_LENGTH];
-			SHA256(reinterpret_cast<const unsigned char *>(input.c_str()), input.length(), hash);
+            unsigned char hash[SHA256_DIGEST_LENGTH];
+            SHA256(reinterpret_cast<const unsigned char *>(input.c_str()), input.length(), hash);
 
             std::ostringstream oss;
             for (int i = 0; i < SHA256_DIGEST_LENGTH; i++) {
