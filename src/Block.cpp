@@ -1,5 +1,4 @@
 #include "../include/Block.h"
-
 #include "../include/HashUtil.h"
 
 #include <chrono>
@@ -8,7 +7,11 @@ Block::Block(const std::string &prevHash, const std::string &data) : prevHash(pr
     hash = std::string(64, '1');
 }
 
-std::string Block::getHash() {
+std::string Block::getPrevHash() const {
+    return prevHash;
+}
+
+std::string Block::getHash() const {
     return hash;
 }
 

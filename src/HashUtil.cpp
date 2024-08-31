@@ -1,11 +1,9 @@
 #include "../include/HashUtil.h"
 
-#include <chrono>
 #include <iomanip>
-#include <sstream>
 #include <openssl/sha.h>
 
-std::string HashUtil::hash(std::string &input) {
+std::string HashUtil::hash(const std::string &input) {
     unsigned char hash[SHA256_DIGEST_LENGTH];
     SHA256(reinterpret_cast<const unsigned char *>(input.c_str()), input.length(), hash);
 

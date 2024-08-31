@@ -8,9 +8,11 @@ set(OPENSSL_LIBRARIES "C:/msys64/ucrt64/lib")
 
 add_executable(fluffy_spoon
         src/main.cpp
-        src/Block.cpp
         include/Block.h
+        include/BlockChain.h
         include/HashUtil.h
+        src/Block.cpp
+        src/BlockChain.cpp
         src/HashUtil.cpp)
 
 find_package(OpenSSL REQUIRED)

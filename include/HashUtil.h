@@ -3,12 +3,10 @@
 
 #include <string>
 
-#include "Block.h"
-
 class HashUtil {
 
     public:
-        static std::string hash(std::string &input);
+        static std::string hash(const std::string &input);
 
 };
 

@@ -13,7 +13,9 @@ class Block {
     public:
         Block(const std::string &prevHash, const std::string &data);
 
-        std::string getHash();
+        std::string getPrevHash() const;
+
+        std::string getHash() const;
 
         void mine(int difficulty);
 
