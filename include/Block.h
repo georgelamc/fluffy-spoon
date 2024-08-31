@@ -6,15 +6,16 @@
 class Block {
 
     private:
-        std::string hash;
         std::string prevHash;
         std::string data;
-        long long timestamp;
+        std::string hash;
 
     public:
         Block(const std::string &prevHash, const std::string &data);
 
-        std::string getHash() const;
+        std::string getHash();
+
+        void mine(int difficulty);
 
 };
 

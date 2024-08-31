@@ -3,6 +3,8 @@
 
 #include <string>
 
+#include "Block.h"
+
 class HashUtil {
 
     public:

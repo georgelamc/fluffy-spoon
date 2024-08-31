@@ -1,5 +1,6 @@
 #include "../include/HashUtil.h"
 
+#include <chrono>
 #include <iomanip>
 #include <sstream>
 #include <openssl/sha.h>
