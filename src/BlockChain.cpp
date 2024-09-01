@@ -1,7 +1,7 @@
 #include "../include/BlockChain.h"
 
 BlockChain::BlockChain() {
-    difficulty = 5; // TODO: make it variable depending on the mining speed
+    difficulty = 5;
 }
 
 std::optional<Block> BlockChain::getLastBlock() const {

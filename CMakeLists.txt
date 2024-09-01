@@ -11,9 +11,11 @@ add_executable(fluffy_spoon
         include/Block.h
         include/BlockChain.h
         include/HashUtil.h
+        include/Wallet.h
         src/Block.cpp
         src/BlockChain.cpp
-        src/HashUtil.cpp)
+        src/HashUtil.cpp
+        src/Wallet.cpp)
 
 find_package(OpenSSL REQUIRED)
 include_directories(${OPENSSL_INCLUDE_DIR})
